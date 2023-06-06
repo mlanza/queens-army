@@ -3,7 +3,7 @@
    :dependencies []
    :dev-http {8080 "public"}
    :builds {
-      :frontend {
+      :app {
          :target :esm
          :output-dir "public/lib"
          :modules {

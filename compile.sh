@@ -1,1 +1,1 @@
-npx shadow-cljs release frontend
+npx shadow-cljs release app
