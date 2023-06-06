@@ -1,0 +1,15 @@
+{
+   :source-paths ["src/main"]
+   :dependencies []
+   :dev-http {8080 "public"}
+   :builds {
+      :frontend {
+         :target :esm
+         :output-dir "public/lib"
+         :modules {
+            :core {:entries [queens-army.core]}
+            :main {:entries [queens-army.app] :init-fn queens-army.app/init :depends-on #{:core}}
+         }
+      }
+   }
+}

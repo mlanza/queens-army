@@ -1,0 +1,8 @@
+{
+  "name": "queens-army",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "shadow-cljs": "2.23.3"
+  }
+}
