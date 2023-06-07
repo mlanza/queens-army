@@ -25,5 +25,5 @@
   (fn [event]
     (let [key (aget event "key")]
       (if (not core/over)
-        (core/act writeln actions key))
+        (core/act writeln "⇢" actions key))
       (.scrollTo js/window 0 (aget body "scrollHeight")))))

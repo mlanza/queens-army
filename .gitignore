@@ -1,6 +1,6 @@
 node_modules/
 public/lib
-
+deno
 /target
 /checkouts
 /src/gen

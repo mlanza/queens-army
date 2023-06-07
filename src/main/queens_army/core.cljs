@@ -89,11 +89,10 @@
                 action (range 1 6)]
             (assoc (get-in xs [action (dec round)]) :round round)))))))
 
-(def sep "⇢")
 (def menu "\ncommands:\n  [q] queen\n  [f] fate\n  [p] progress\n  [l] location\n  [r] region\n  [d] direction\n  [g] guild\n  [i] interaction\n  [c] cube\n[2-9] random #\n  [?] show commands\n")
 (def over false)
 
-(defn act [writeln actions key]
+(defn act [writeln sep actions key]
   (case key
     "q" (if-let [card (first @actions)]
           (do

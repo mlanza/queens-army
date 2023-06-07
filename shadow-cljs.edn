@@ -11,5 +11,14 @@
             :main {:entries [queens-army.app] :init-fn queens-army.app/init :depends-on #{:core}}
          }
       }
+      :deno {
+         :target :esm
+         :output-dir "deno"
+         :modules {
+            :core {:entries [queens-army.core]}
+            :main {:entries [queens-army.deno] :depends-on #{:core}}
+         }
+      }
+
    }
 }
