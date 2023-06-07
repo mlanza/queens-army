@@ -1,1 +1,1 @@
-npx shadow-cljs release app
+npx shadow-cljs release deno
